@@ -15,7 +15,7 @@
 <link rel="shortcut icon" href="">
 <script language="javascript" type="text/javascript">
     function OnLoginButtonClick() {
-        window.webkit.messageHandlers.loginHandler.postMessage('{ user_id: hello }')
+        window.webkit.messageHandlers.loginHandler.postMessage('{ "user_id": "12345" }')
     }
     function OnGoBackButtonClick() {
         window.webkit.messageHandlers.goBackHandler.postMessage('')
