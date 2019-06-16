@@ -23,6 +23,15 @@
     function OnOpenSafariButtonClick() {
         window.webkit.messageHandlers.openSafariHandler.postMessage('https://www.1101.com/')
     }
+    function OnOpenSafariError1ButtonClick() {
+        window.webkit.messageHandlers.openSafariHandler.postMessage('')
+    }
+    function OnOpenSafariError2ButtonClick() {
+        window.webkit.messageHandlers.openSafariHandler.postMessage('hoge://')
+    }
+    function OnOpenSafariError3ButtonClick() {
+        window.webkit.messageHandlers.openSafariHandler.postMessage('abc')
+    }
 </script>
 </head>
 <body>
@@ -38,6 +47,18 @@
 
 <p>
 <input type="button" value="Open Safari" onclick="OnOpenSafariButtonClick();"/>
+</p>
+
+<p>
+<input type="button" value="Open Safari Error 1" onclick="OnOpenSafariError1ButtonClick();"/>
+</p>
+
+<p>
+<input type="button" value="Open Safari Error 2" onclick="OnOpenSafariError2ButtonClick();"/>
+</p>
+
+<p>
+<input type="button" value="Open Safari Error 2" onclick="OnOpenSafariError3ButtonClick();"/>
 </p>
 
 <!--p>
