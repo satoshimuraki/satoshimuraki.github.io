@@ -39,8 +39,8 @@
   ],
   "libraries": "iconv",
   "xcconfig": {
-    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*][arch=*]": "ZBarReaderViewImpl_Simulator.m ZBarReaderViewController.m ZBarHelpController.m",
-    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*][arch=*]": "ZBarReaderViewImpl_Capture.m ZBarCaptureReader.m ZBarReaderViewController.m ZBarHelpController.m",
+    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*][arch=*]": "ZBarReaderViewImpl_Simulator.m ZBarReaderViewController.m ZBarHelpController.m ZBarReaderController.m",
+    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*][arch=*]": "ZBarReaderViewImpl_Capture.m ZBarCaptureReader.m ZBarReaderViewController.m ZBarHelpController.m ZBarReaderController.m",
     "GCC_PREPROCESSOR_DEFINITIONS": "NDEBUG=1"
   },
   "prefix_header_file": "iphone/include/prefix.pch",
